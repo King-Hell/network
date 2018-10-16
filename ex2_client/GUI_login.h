@@ -2,6 +2,7 @@
 
 #include <QWidget>
 #include <qmessagebox.h>
+#include<qevent.h>
 
 #include "ui_GUI_login.h"
 #include "msocket.h"
@@ -12,7 +13,7 @@ class GUI_login : public QWidget
 	Q_OBJECT
 
 public:
-	GUI_login(msocket&,QWidget *parent = Q_NULLPTR);
+	GUI_login(msocket&, QWidget *parent = Q_NULLPTR);
 	~GUI_login();
 
 signals:
@@ -23,4 +24,5 @@ public slots:
 private:
 	Ui::GUI_login ui;
 	msocket sock;
+	void keyPressEvent(QKeyEvent *event);
 };

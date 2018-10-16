@@ -36,7 +36,7 @@ void GUI_main::sendChat(QString chatTo, QString message) {
 	GUI_chat *chat = NULL;
 	if (chatWindow.find(chatTo) == chatWindow.end()) {
 		//未开启与该用户的聊天窗口
-		chat = new GUI_chat(sock, chatTo,this);
+		chat = new GUI_chat(sock, chatTo,&chatWindow);
 		chatWindow.insert(chatTo, chat);
 		chat->show();
 	}
@@ -69,7 +69,7 @@ GUI_main::~GUI_main()
 void GUI_main::beginChat(QListWidgetItem *item) {
 	//请求与某人聊天
 	QString username = item->text();
-	GUI_chat *chat = new GUI_chat(sock, username);
+	GUI_chat *chat = new GUI_chat(sock, username,&chatWindow);
 	chatWindow.insert(username, chat);
 	chat->show();
 }
@@ -80,6 +80,8 @@ void GUI_main::closeEvent(QCloseEvent *event)
 	mainRecvThread.stop();
 	mainRecvThread.terminate();
 	sock.close();
+	for (auto i = chatWindow.begin(); i != chatWindow.end(); i++)
+		i.value()->close();
 }
 
 

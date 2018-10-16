@@ -1,11 +1,14 @@
 #include "GUI_chat.h"
 
-GUI_chat::GUI_chat(msocket &sock,QString &username,QWidget *parent)
+GUI_chat::GUI_chat(msocket &sock,QString &username, QMap<QString, GUI_chat*> *chatWindow,QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
 	this->sock = sock;
 	this->username = username;
+	this->chatWindow = chatWindow;
+	this->setWindowTitle("Óë" + username + "ÁÄÌìÖÐ");
+
 }
 
 GUI_chat::~GUI_chat()
@@ -22,4 +25,10 @@ void GUI_chat::sendMessage() {
 void GUI_chat::append(QString disp) {
 	ui.textBrowser->append(disp);
 }
+
+void GUI_chat::closeEvent(QCloseEvent * event)
+{
+	chatWindow->remove(username);
+}
+
 

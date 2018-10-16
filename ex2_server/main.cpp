@@ -104,7 +104,7 @@ DWORD WINAPI clientThread(LPVOID args) {
 				}
 				else {
 					//要聊天的对象离线
-					sock->send("CHAT:system;" + chatTo + "已离线\n");
+					sock->send("CHAT:system;" + chatTo + " QUIT\n");
 				}
 			}
 			else if (ins == "LOGOUT") {

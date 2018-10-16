@@ -12,6 +12,14 @@ GUI_login::~GUI_login()
 	
 }
 
+void GUI_login::keyPressEvent(QKeyEvent * event)
+{
+	if (event->key() == Qt::Key_Return)
+		login();
+}
+
+
+
 void GUI_login::login() {//登录检测方法
 	// 向服务器发出连接请求
 	if (ui.edit_username->text() == "" || ui.edit_password->text() == "") {
