@@ -11,6 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ex2_client", "ex2_client\ex
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ex2_server", "ex2_server\ex2_server.vcxproj", "{73D8F55B-53CA-48FB-A07F-871DD507F826}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ex4", "ex4\ex4.vcxproj", "{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ex4_gui", "ex4_gui\ex4_gui.vcxproj", "{9B728AA4-AEFC-4553-AE23-5BA895E30E37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -49,6 +53,20 @@ Global
 		{73D8F55B-53CA-48FB-A07F-871DD507F826}.Release|x64.Build.0 = Release|x64
 		{73D8F55B-53CA-48FB-A07F-871DD507F826}.Release|x86.ActiveCfg = Release|Win32
 		{73D8F55B-53CA-48FB-A07F-871DD507F826}.Release|x86.Build.0 = Release|Win32
+		{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}.Debug|x64.ActiveCfg = Debug|x64
+		{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}.Debug|x64.Build.0 = Debug|x64
+		{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}.Debug|x86.ActiveCfg = Debug|Win32
+		{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}.Debug|x86.Build.0 = Debug|Win32
+		{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}.Release|x64.ActiveCfg = Release|x64
+		{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}.Release|x64.Build.0 = Release|x64
+		{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}.Release|x86.ActiveCfg = Release|Win32
+		{B7A2E10A-C87F-465C-87DB-605AD4A5DE89}.Release|x86.Build.0 = Release|Win32
+		{9B728AA4-AEFC-4553-AE23-5BA895E30E37}.Debug|x64.ActiveCfg = Debug|x64
+		{9B728AA4-AEFC-4553-AE23-5BA895E30E37}.Debug|x64.Build.0 = Debug|x64
+		{9B728AA4-AEFC-4553-AE23-5BA895E30E37}.Debug|x86.ActiveCfg = Debug|x64
+		{9B728AA4-AEFC-4553-AE23-5BA895E30E37}.Release|x64.ActiveCfg = Release|x64
+		{9B728AA4-AEFC-4553-AE23-5BA895E30E37}.Release|x64.Build.0 = Release|x64
+		{9B728AA4-AEFC-4553-AE23-5BA895E30E37}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
