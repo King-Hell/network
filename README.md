@@ -3,3 +3,8 @@
 ### 实验1
 * Project1为实验1的client端
 * Project2为实验1的server端
+### 实验2
+* ex2_client为实验2的client端
+* ex2_server为实验2的server端
+### 实验3&实验4
+* 这两个实验均在ex4_gui中实现
